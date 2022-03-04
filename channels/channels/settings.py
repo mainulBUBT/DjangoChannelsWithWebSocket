@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-tm90*mntbrqezh^yw0&dqxalub7wpabbvlrd@+)!-i7i42np83'
+SECRET_KEY = 'django-insecure-_3bt4fohgm+e9(_*xqln9mp*((wx5k!&ms3mi62q2+yctd+k90'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -69,7 +69,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'channels.wsgi.application'
+# WSGI_APPLICATION = 'channels.wsgi.application'
+ASGI_APPLICATION = 'channels.asgi.application'
 
 
 # Database
