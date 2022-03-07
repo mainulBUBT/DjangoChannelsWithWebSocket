@@ -17,10 +17,10 @@ class MySyncConsumer(SyncConsumer):
 class MyAsyncConsumer(AsyncConsumer):
 
     async def websocket_connect(self, event):
-        print("Websocket Connected..")
+        print("Websocket Connected..", event)
 
     async def websocket_receive(self, event):
-        print("Message received")
+        print("Message received", event)
 
     async def websocket_disconnect(self, event):
-        print("Websocket disconnected..")
+        print("Websocket disconnected..", event)
